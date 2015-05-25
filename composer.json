@@ -1,0 +1,30 @@
+{
+    "name": "coskunsoysal/restApiSample",
+    "description": "Simple RESTful API",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Coşkun Soysal",
+            "email": "coskunsoysal@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "slim/slim": "*",
+        "slim/extras": "*",
+        "slim/middleware": "*",
+        "j4mie/paris": "*",
+        "ext-pdo": "*"
+    },
+    "suggest": {
+        "ext-pdo-sqlite": "For SQLite databases"
+	},
+    "archive": {
+        "exclude": ["vendor", "*.log"]
+    },
+    "autoload": {
+        "psr-0": {
+            "API": "lib/"
+        }
+    }
+}

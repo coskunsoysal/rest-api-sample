@@ -1,0 +1,21 @@
+#!/usr/bin/env php
+<?php
+require_once dirname(__FILE__) . '/../vendor/autoload.php';
+
+$config = array();
+require_once dirname(__FILE__) . '/../db/config/default.php';
+
+// Init database
+\ORM::configure($config['db']['dsn']);
+
+$db = \ORM::get_db();
+
+$api_auth = file_get_contents(
+    dirname(__FILE__) . '/../db/sql/data/api_auth.sql'
+);
+$users = file_get_contents(
+    dirname(__FILE__) . '/../db/sql/data/users.sql'
+);
+
+$db->exec($api_auth);
+$db->exec($users);

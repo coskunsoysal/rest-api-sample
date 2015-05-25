@@ -1,0 +1,7 @@
+DROP TABLE IF EXISTS `api_auth`;
+
+CREATE TABLE IF NOT EXISTS `api_auth` (
+    `id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+    `email` TEXT NOT NULL, 
+    `apikey` TEXT NOT NULL
+);
