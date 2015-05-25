@@ -3,7 +3,7 @@ PHP Simple RESTful Sample
 
 In this sample, I use slim for HTTP requests, sqlite for db, PDO for db connection, composer for packages.
 Running version : yazilim.soysal.biz/rest-api-sample
-
+ 
 _Author: Coşkun Soysal (<coskunsoysal@gmail.com>)_
 
 ## Endpoints and Actions
@@ -17,13 +17,13 @@ _Author: Coşkun Soysal (<coskunsoysal@gmail.com>)_
 
 ## CURL commands
     # List users
-    curl -X GET --user coskun@soysal.biz:qaz123wsx456edc789 -H "Accept: application/json" -H "Content-Type: application/json" http://localhost/restApiSample/public/api/v1/users
+    curl -X GET --user coskun@soysal.biz:qaz123wsx456edc789 -H "Accept: application/json" -H "Content-Type: application/json" http://yazilim.soysal.biz/rest-api-sample/public/api/v1/users
     
     # Get user with id
-    curl -X GET --user coskun@soysal.biz:qaz123wsx456edc789 -H "Accept: application/json" -H "Content-Type: application/json" http://localhost/restApiSample/public/api/v1/users/1
+    curl -X GET --user coskun@soysal.biz:qaz123wsx456edc789 -H "Accept: application/json" -H "Content-Type: application/json" http://localhost/rest-api-sample/public/api/v1/users/1
 
     # Post user
-    curl -X POST --user coskun@soysal.biz:qaz123wsx456edc789  -H "Accept: application/json" -H "Content-Type: application/json" -d "firstname=firstname&lastname=lastname&email=email@email.com" http://localhost/restApiSample/public/api/v1/users
+    curl -X POST --user coskun@soysal.biz:qaz123wsx456edc789  -H "Accept: application/json" -H "Content-Type: application/json" -d "firstname=firstname&lastname=lastname&email=email@email.com" http://yazilim.soysal.biz/rest-api-sample/public/api/v1/users
 
     # Delete User
-    curl -X POST --user coskun@soysal.biz:qaz123wsx456edc789  -H "Accept: application/json" -H "Content-Type: application/json" http://localhost/restApiSample/public/api/v1/users/3
+    curl -X POST --user coskun@soysal.biz:qaz123wsx456edc789  -H "Accept: application/json" -H "Content-Type: application/json" http://yazilim.soysal.biz/rest-api-sample/public/api/v1/users/3

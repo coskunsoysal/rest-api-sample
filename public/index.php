@@ -127,7 +127,7 @@ $app->group(
 $app->get(
     '/',
     function () use ($app, $log) {
-        echo "<h1>Hello, this is a very basic RESTful Api Sample</h1>";
+        echo "<h1>Hello, this is a basic RESTful Api Sample</h1>";
     }
 );
 
