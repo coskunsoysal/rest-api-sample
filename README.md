@@ -27,3 +27,8 @@ _Author: Coşkun Soysal (<coskunsoysal@gmail.com>)_
 
     # Delete User
     curl -X POST --user coskun@soysal.biz:qaz123wsx456edc789  -H "Accept: application/json" -H "Content-Type: application/json" http://yazilim.soysal.biz/rest-api-sample/public/api/v1/users/3
+
+
+### Auto-install dependencies
+    
+    composer install
