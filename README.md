@@ -1,9 +1,8 @@
 PHP Simple RESTful Sample
 ===============
 
-# Very Simple RESTful API Sample
 In this sample, I use slim for HTTP requests, sqlite for db, PDO for db connection, composer for packages.
-Running version : yazilim.soysal.biz/restApiSample
+Running version : yazilim.soysal.biz/rest-api-sample
 
 _Author: Coşkun Soysal (<coskunsoysal@gmail.com>)_
 
